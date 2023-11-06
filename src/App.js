@@ -6,8 +6,6 @@ import ShopCategory from './Pages/ShopCategory';
 import Product from './Pages/Product';
 import Cart from './Pages/Cart';
 import LoginSignUp from './Pages/LoginSignup';
-import Hero from './Components/Hero/Hero';
-import Item from './Components/Item/Item';
 
 function App() {
   return (
@@ -15,7 +13,7 @@ function App() {
       <BrowserRouter>
         <Routes>
 
-          <Route path='/' element={<Shop category='/' />} />
+          <Route path='/' element={<ShopCategory category='/' />} />
           <Route path='/mens' element={<ShopCategory category="men" />} />
           <Route path='/womens' element={<ShopCategory category="women" />} />
           <Route path='/kids' element={<ShopCategory category="kid" />} />
@@ -26,8 +24,8 @@ function App() {
           <Route path='/login' element={<LoginSignUp/>} />
         </Routes>
         <Navbar />
-        <Hero />
-        <Item/>
+        <Shop/>
+        
       </BrowserRouter>
     </>
   );
