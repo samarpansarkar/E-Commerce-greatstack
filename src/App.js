@@ -7,6 +7,7 @@ import Product from './Pages/Product';
 import Cart from './Pages/Cart';
 import LoginSignUp from './Pages/LoginSignup';
 import Hero from './Components/Hero/Hero';
+import Item from './Components/Item/Item';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         </Routes>
         <Navbar />
         <Hero />
+        <Item/>
       </BrowserRouter>
     </>
   );
