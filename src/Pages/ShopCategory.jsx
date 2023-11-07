@@ -1,8 +1,9 @@
-import React from 'react'
+import React from 'react';
+import './CSS/ShopCategory.css';
 
 const ShopCategory = () => {
   return (
-    <div>
+    <div className='shop-category'>
       
     </div>
   )
