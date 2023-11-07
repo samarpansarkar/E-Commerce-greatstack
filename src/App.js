@@ -6,14 +6,15 @@ import ShopCategory from './Pages/ShopCategory';
 import Product from './Pages/Product';
 import Cart from './Pages/Cart';
 import LoginSignUp from './Pages/LoginSignup';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
     <>
       <BrowserRouter>
+        <Navbar />
         <Routes>
-
-          <Route path='/' element={<ShopCategory category='/' />} />
+          <Route path='/' element={<Shop/>} />
           <Route path='/mens' element={<ShopCategory category="men" />} />
           <Route path='/womens' element={<ShopCategory category="women" />} />
           <Route path='/kids' element={<ShopCategory category="kid" />} />
@@ -21,11 +22,9 @@ function App() {
             <Route path=':productId' element={<Product />} />
           </Route>
           <Route path='/cart' element={<Cart />} />
-          <Route path='/login' element={<LoginSignUp/>} />
+          <Route path='/login' element={<LoginSignUp />} />
         </Routes>
-        <Navbar />
-        <Shop/>
-        
+        <Footer />
       </BrowserRouter>
     </>
   );
@@ -34,4 +33,4 @@ function App() {
 export default App;
 
 
-//todo 1:5
+//todo 1:16
