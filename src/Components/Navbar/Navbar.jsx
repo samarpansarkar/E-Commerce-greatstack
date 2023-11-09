@@ -39,7 +39,7 @@ const Navbar = () => {
             setMenu("kids");
           }}
         >
-          <Link style={{textDecoration: 'none'}} to='/kids'>Men</Link> {menu ==="kids"?<hr/>:<></>}
+          <Link style={{textDecoration: 'none'}} to='/kids'>Kids</Link> {menu ==="kids"?<hr/>:<></>}
         </li>
       </ul>
       <div className={Classes.cart}>
