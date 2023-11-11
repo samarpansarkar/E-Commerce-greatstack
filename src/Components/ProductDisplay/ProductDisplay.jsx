@@ -21,7 +21,7 @@ const ProductDisplay = (props) => {
       </div>
       <div className="productdisplay-right">
         <h1>{product.name}</h1>
-        <div className="productdisplay-right-start">
+        <div className="productdisplay-right-stars">
           <img src={star_icon} alt="" />
           <img src={star_icon} alt="" />
           <img src={star_icon} alt="" />
@@ -45,14 +45,17 @@ const ProductDisplay = (props) => {
         </div>
         <div className="productdisplay-right-size">
           <h1>Select Size</h1>
-          <div className="productdisplay-right-size">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+          <div className="productdisplay-right-sizes">
+            <div>S</div>
+            <div>M</div>
+            <div>L</div>
+            <div>XL</div>
+            <div>XXL</div>
           </div>
         </div>
+        <button>ADD TO CART</button>
+        <p className="productdisplay-right-category"><span>Category : </span>Woman, T-Shirt, Crop Top</p>
+        <p className="productdisplay-right-category"><span>Tags : </span>Modern, latest</p>
       </div>
     </div>
   );
